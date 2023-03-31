@@ -4,6 +4,9 @@
 
 Blackpink is an Application Programming Interface(API) design to provide you with data about the blackpink member, the most popular kpop girl group of YG entreteiment. 
 
+## 🤖Deploy
+Link to deploy https://blackpink-api-wv5k.onrender.com/App/Characters
+
 ## ✨Run Locally
 
 #### To run the api in your local host you're going to need the following commands:
