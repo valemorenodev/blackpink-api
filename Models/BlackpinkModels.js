@@ -4,11 +4,13 @@ const mongoose = require('mongoose');
 const pinksSchema = new mongoose.Schema({
   name: String,
   description: String,
-  debutDate: String,
-  birthday: String,
+  debutDateAsMember: String,
+  debutDateAsSolist: String,
+  bornDate: String,
   zodiacSign: String,
   trainingTime: String,
   nationality: String,
+  position: String
 });
 
 

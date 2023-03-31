@@ -33,4 +33,5 @@ app.use("/App", Routes);
 
 app.listen(port, () => {
   console.log("***---Successful connection to the port---***");
+  console.log("http://localhost:3030/App")
 })
