@@ -1,6 +1,6 @@
 ![Logo](https://image.europafm.com/clipping/cmsimages01/2022/08/18/1B45BED4-D95C-4FE6-9EF1-A3F09B1CEB4E/blackpink-regresa-ano-pink-venom_98.jpg?crop=1141,642,x0,y0&width=1900&height=1069&optimize=low&format=webply)
 
-# 🌸Blackpink API
+# 🖤💗Blackpink API
 
 Blackpink is an Application Programming Interface(API) design to provide you with data about the blackpink member, the most popular kpop girl group of YG entreteiment. 
 
