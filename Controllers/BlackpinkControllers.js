@@ -1,18 +1,18 @@
 /* eslint-disable no-undef */
-const Pinks = require("../Models/BlackpinkModels")
+const Character = require("../Models/BlackpinkModels")
 
-exports.getPinks = async (req, res) => {
+exports.getCharacters = async (req, res) => {
   try {
-    const result = await Pinks.find();
+    const result = await Character.find();
     res.status(200).json(result);
   } catch (err) {
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 };
 
-exports.getPinks = async (req, res) => {
+exports.getCharacter = async (req, res) => {
   try {
-    const result = await Pinks.findById(req.params.id); //va un id guardado como parametro
+    const result = await Character.findById(req.params.id); //va un id guardado como parametro
     if (result) {
       res.status(200).json(result);
     } else {
@@ -23,18 +23,18 @@ exports.getPinks = async (req, res) => {
   }
 };
 
-exports.postNewPinks = async (req, res) => {
+exports.postNewCharacter = async (req, res) => {
   try {
-    const result = await Pinks.create(req.body);
+    const result = await Character.create(req.body);
     res.status(200).json(result);
   } catch (err) {
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 };
 
-exports.editPinks = async (req, res) => {
+exports.editCharacter = async (req, res) => {
   try {
-    const result = await Pinks.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    const result = await Character.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
     if (result) {
       res.status(200).json(result);
     } else {
@@ -46,9 +46,9 @@ exports.editPinks = async (req, res) => {
   }
 }
 
-exports.deletePinks = async (req, res) => {
+exports.deleteCharacter = async (req, res) => {
   try {
-    const result = await Pinks.findOneAndDelete({ _id: req.params.id });
+    const result = await Character.findOneAndDelete({ _id: req.params.id });
     if (result) {
       res.status(200).json(result);
     } else {
@@ -59,9 +59,9 @@ exports.deletePinks = async (req, res) => {
   }
 }
 
-exports.postNewPinks = async (req, res) => {
+exports.postNewCharacter = async (req, res) => {
   try {
-    const result = await Pinks.create(req.body);
+    const result = await Character.create(req.body);
     res.status(200).json(result);
   } catch (err) {
     res.status(500).json({ error: 'Error interno del servidor' });

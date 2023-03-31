@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const mongoose = require('mongoose');
 
-const pinksSchema = new mongoose.Schema({
+const characterSchema = new mongoose.Schema({
   name: String,
   description: String,
   debutDateAsMember: String,
@@ -14,4 +14,4 @@ const pinksSchema = new mongoose.Schema({
 });
 
 
-module.exports = mongoose.model("blackpinkData", pinksSchema)
+module.exports = mongoose.model("blackpinkData", characterSchema)
